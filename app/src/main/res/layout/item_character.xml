@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:layoutDescription="@xml/item_character_scene"
+    >
+
+
+    <ImageView
+        android:id="@+id/character_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_launcher_background" />
+
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:text="Maria"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/character_iv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/status_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:text="Maria"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/character_iv"
+        app:layout_constraintTop_toBottomOf="@id/name_tv" />
+
+    <TextView
+        android:id="@+id/species_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:text="Earth"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/character_iv"
+        app:layout_constraintTop_toBottomOf="@id/status_tv" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
